@@ -1,0 +1,101 @@
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+/* Barra de navegación le di un padding para colocar margenes iguales en la barra
+un ancho del 100% para que cubra toda la pantalla */
+.topNav {
+    background-color: #33a2ad;
+    width: 100%;
+    height: 5vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
+    
+}
+
+/* H5 para titulo de Viajes Chile */
+h5 {
+    color: white;
+    font-size: 0.8rem;
+    
+}
+/**/
+ul {
+    float: right;
+    font-size: 8px;
+    line-height: 5vh;
+    
+    
+}
+/**/
+nav ul li {
+    display: inline-block;
+    line-height: 15vh;
+    margin-left:8px ;
+    
+
+}
+
+/**/
+nav ul li a {
+    color: white;
+    font-size: 25px;
+    
+}
+
+/*carrusel*/
+.carousel-inner{
+    overflow: inherit;
+}
+
+/*textos*/
+h1 {
+    color: white;
+    text-align: center;
+}
+.titulo{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    
+}
+
+.parrafos {
+    display: flex;
+    justify-content: center;
+}
+
+.parrafos p {
+    flex: 1;
+    margin: 0 10px;
+    color: white;
+}
+
+.p1 p2{
+    font-size: 6px;
+    
+}
+
+/*contacto*/
+label{
+    color: white;
+    
+}
+
+/*Footer*/
+footer {
+    background-color: #33a2ad;
+}
