@@ -11,6 +11,9 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"
     />
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -77,40 +80,44 @@
     </div>
     <!-- #3 Contenedor para colocar los tres párrafos dentro de un div con class parrafos al que le agregué un d-flex con justify content, y al css colocar las id de p1,p2
     para agregar el color en el background azul arriba o abajo y editarle el largo para que quede debajo del favicon -->
-<section class="container-fluid">
-    <div class="titulo">
-        <h1>¿QUIÉNES SOMOS?</h1>
-    </div>
-    <div class="parrafos">
-        <p class="p1">
-            <!--avion-->
-            <i class="fa-solid fa-plane"></i>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
-            exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
-            temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
-            iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
-            Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
-        </p>
-        <p class="p2">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
-            exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
-            temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
-            iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
-            Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
-            <!--montaña-->
-            <i class="fa-solid fa-mountain"></i>
-        </p>
-        <p class="p1">
-            <!--ruta-->
-            <i class="fa-solid fa-route"></i>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
-            exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
-            temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
-            iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
-            Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
-        </p>
-    </div>
-</section>
+    <section class="container-fluid">
+        <div class="titulo text-center">
+            <h1>¿QUIÉNES SOMOS?</h1>
+        </div>
+        <div class="parrafos">
+            <div class="p1-container text-white">
+                <i class="fa-solid fa-plane mb-3 mx-3"></i>
+                <p class="p1" data-bs-toggle="tooltip" data-bs-placement="top" title="Viaje en avión">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
+                    exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
+                    temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
+                    iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
+                    Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
+                </p>
+            </div>
+            <div class="p2-container text-white">
+                <p class="p2" data-bs-toggle="tooltip" data-bs-placement="top" title="Paisajes naturales">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
+                    exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
+                    temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
+                    iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
+                    Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
+                </p>
+                <i class="fa-solid fa-mountain mb-3"></i>
+            </div>
+            <div class="p1-container text-white">
+                <i class="fa-solid fa-route mb-3"></i>
+                <p class="p1" data-bs-toggle="tooltip" data-bs-placement="top" title="Rutas a explorar">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
+                    exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
+                    temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
+                    iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
+                    Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
+                </p>
+            </div>
+        </div>
+    </section>
+    
     <!-- #4 Contenedor para colocar el titulo y luego solo las cuatro cards dentro de un div pero revisaré el código que tengo del trabajo anterior-->
 <section class="container-fluid">
     <div class="titulo">
