@@ -1,14 +1,12 @@
-.container-fluid{
-    margin: 0;
-    padding: 0;
-    
-    
+body {
+    background-color: black;
+    color: white; /* Esto es para asegurarse de que el texto sea visible en el fondo negro */
 }
+
 
 /* Barra de navegación le di un padding para colocar margenes iguales en la barra
 un ancho del 100% para que cubra toda la pantalla */
 .topNav {
-    background-color: #33a2ad;
     width: 100%;
     height: 5vh;
     padding-left: 1rem;
@@ -19,6 +17,14 @@ un ancho del 100% para que cubra toda la pantalla */
     
 }
 
+.imgSvg{
+    width: 1rem;
+}
+
+/*.contenedor-icono {
+    background-color: #33a2ad;
+    
+}*/
 /* H5 para titulo de Viajes Chile */
 h5 {
     color: white;
@@ -66,13 +72,6 @@ h1 {
     justify-content: center;
     
 }
-.container-fluid {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    
-}
-
 .parrafos {
     display: flex;
     justify-content: center;
@@ -98,4 +97,15 @@ label{
 /*Footer*/
 footer {
     background-color: #33a2ad;
+}
+
+.formulario input{
+    width: 900px; 
+}
+.formulario textarea {
+    width: 900px; 
+}
+
+form{
+    margin-right: 25px;
 }

@@ -6,15 +6,11 @@
     <title>Prueba Mariana Lopez</title>
     <!-- Bootstrap CSS -->
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"
-    />
-    <!-- Bootstrap CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+        />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -28,7 +24,6 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -38,130 +33,155 @@
     <!-- Your custom JS -->
     <script defer src="./assets/js/index.js"></script>
 </head>
+    <!-- 
+        1. Construir la estructura de la página usando HTML. Listo
+        2. Componer visualmente el documento HTML con propiedades CSS Listo
+        3. Emplear elementos de Bootstrap en el documento HTML Listo
+        4. Agregar componentes que utilicen JavaScript. Listo carousel y tooltips(Tooltips agregados en los parrafos y en el boton de contactos El carrucel desaparece en version movil)
+        5. Gestionar el código fuente utilizando Github. Listo
+        
+        -->
 <body>
     <!-- #1 Contenedor para colocar el header un div para el svg+título y otro div para la nav bar que lleva Inicio Quienes Destacado y Contacto-->
 
     <header>
-            <nav class="topNav">
-                <img src="./assets/img/viajes.svg" alt="avion" width="15" height="15">
-                <label class="tituloSvgNav">
-                    <h5>Viajes Chile</h5>
-                </label>
-                <ul>
-                    <li></li><a href="#Inicio">Inicio</a>
-                    <li></li><a href="#quieneSomos">Quienes Somos</a>
-                    <li></li><a href="#destacados">Destacados</a>
-                    <li></li><a href="#contacto">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-info">
+            <div class="container-fluid">
+                <img src="./assets/img/viajes.svg" alt="avionsvg" title="imagen de avion" class="imgSvg">
+              <a class="navbar-brand" href="#">Viajes Chile</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Destacado</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+                  </li>
                 </ul>
-            </nav>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <!-- #2 Contenedor para colocar el carrusel y los botones mayor y menor qué-->
-    <div id="carruselLugares" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExample" class="carousel slide d-none d-md-block">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="llamas">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="islaDePascua">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="pingüino">
-            </div>
+          <div class="carousel-item active">
+            <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
-    </div>
+      </div>
     <!-- #3 Contenedor para colocar los tres párrafos dentro de un div con class parrafos al que le agregué un d-flex con justify content, y al css colocar las id de p1,p2
     para agregar el color en el background azul arriba o abajo y editarle el largo para que quede debajo del favicon -->
-    <section class="container-fluid px-4">
+    <section class="container px-4">
         <div class="titulo text-center">
             <h1>¿QUIÉNES SOMOS?</h1>
         </div>
         <div class="parrafos">
-            <div class="p1-container text-white">
-                <i class="fa-solid fa-plane mb-3 mx-3"></i>
-                <p class="p1" data-bs-toggle="tooltip" data-bs-placement="top" title="Viaje en avión">
+            <div class="p1-container text-white" data-bs-toggle="tooltip" data-bs-placement="top" title="Viaje en avión">
+                <div class="contenedor-icono text-center bg-info">
+                    <i class="fa-solid fa-plane mb-3 mx-3"></i>
+                </div>
+                <p class="p1">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
                     exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
-                    temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
-                    iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
-                    Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
+                    temporibus id assumenda magni vitae dolorum tenetur quaerat.
                 </p>
             </div>
-            <div class="p2-container text-white">
-                <p class="p2" data-bs-toggle="tooltip" data-bs-placement="top" title="Paisajes naturales">
+            <div class="p2-container text-white" data-bs-toggle="tooltip" data-bs-placement="top" title="Paisajes naturales">
+                <p class="p2">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
                     exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
-                    temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
-                    iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
-                    Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
+                    temporibus id assumenda magni vitae dolorum tenetur quaerat.
                 </p>
-                <i class="fa-solid fa-mountain mb-3"></i>
+                <div class="contenedor-icono text-center bg-info">
+                    <i class="fa-solid fa-mountain mb-3"></i>
+                </div>
+                
             </div>
             <div class="p1-container text-white">
-                <i class="fa-solid fa-route mb-3"></i>
-                <p class="p1" data-bs-toggle="tooltip" data-bs-placement="top" title="Rutas a explorar">
+                <div class="contenedor-icono text-center bg-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Rutas a explorar">
+                    <i class="fa-solid fa-route mb-3"></i>
+                </div>
+                <p class="p1">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolor, eum corporis eveniet 
                     exercitationem omnis, minus dicta molestiae ea voluptatum nostrum magnam repudiandae ad, 
-                    temporibus id assumenda magni vitae dolorum tenetur quaerat. Minima quibusdam quas nisi 
-                    iste optio obcaecati officiis perspiciatis unde? Excepturi quisquam id molestias nesciunt.
-                    Quidem ipsa odit ex fuga nisi, minus maxime molestiae tenetur.
+                    temporibus id assumenda magni vitae dolorum tenetur quaerat.
                 </p>
             </div>
         </div>
     </section>
     
     <!-- #4 Contenedor para colocar el titulo y luego solo las cuatro cards dentro de un div pero revisaré el código que tengo del trabajo anterior-->
-<section class="container-fluid px-4">
+<section class="container">
     <div class="titulo">
         <h1>DESTACADOS</h1>
     </div>
-    <div class="card-deck justify-content-center gap-2">
+    <div class="container">
         <!-- Card #1-->
-        <div class="card">
-            <img src="./assets/img/card1.jpg" alt="montañaslago">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt suscipit necessitatibus vero perferendis exercitationem, possimus expedita quis mollitia nisi.</p>
-                </div>
+        <div class="row">
+            <div class="card col-12 col-md-3 "> 
+                <img class="card-img-top" src="./assets/img/card1.jpg" alt="montañaslago">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt suscipit necessitatibus vero perferendis exercitationem, possimus expedita quis mollitia nisi.</p>
+                    </div>
+            </div>
+            <!-- Card #2-->
+            <div class="card col-12 col-md-3">
+                <img src="./assets/img/card2.jpg" alt="montañasreflejo">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt suscipit necessitatibus vero perferendis exercitationem, possimus expedita quis mollitia nisi.</p>
+                    </div>
+            </div>
+            <!-- Card #3-->
+            <div class="card col-12 col-md-3">
+                <img src="./assets/img/card3.jpg" alt="desierto">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt suscipit necessitatibus vero perferendis exercitationem, possimus expedita quis mollitia nisi.</p>
+                    </div>
+            </div>
+            <!-- Card #4-->
+            <div class="card col-12 col-md-3">
+                <img src="./assets/img/card4.jpg" alt="bosque">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt suscipit necessitatibus vero perferendis exercitationem, possimus expedita quis mollitia nisi.</p>
+                    </div>
+            </div>
         </div>
-        <!-- Card #2-->
-        <div class="card">
-            <img src="./assets/img/card2.jpg" alt="montañasreflejo">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt suscipit necessitatibus vero perferendis exercitationem, possimus expedita quis mollitia nisi.</p>
-                </div>
-        </div>
-        <!-- Card #3-->
-        <div class="card">
-            <img src="./assets/img/card3.jpg" alt="desierto">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt suscipit necessitatibus vero perferendis exercitationem, possimus expedita quis mollitia nisi.</p>
-                </div>
-        </div>
-        <!-- Card #4-->
-        <div class="card">
-            <img src="./assets/img/card4.jpg" alt="bosque">
-                <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sunt suscipit necessitatibus vero perferendis exercitationem, possimus expedita quis mollitia nisi.</p>
-                </div>
-        </div>
+        
     </div>
 </section>
-    <!-- #5 Contenedor para colocar el formulario de contacto-->
-    <section class="container-fluid text-center px-4">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
+   <!-- #5 Contenedor para colocar el formulario de contacto-->
+<section class="container px-4">
+    <div class="row justify">
+        <div class="col-md-6 mx-auto">
             <div class="titulo">
                 <h1>CONTACTO</h1>
             </div>
@@ -169,22 +189,23 @@
                 <div class="formulario">
                     <div class="mb-3">
                         <label for="name" class="col-form-label">Nombre:</label>
-                        <input type="text" id="name" name="user_name" class="form-control"/>
+                        <input class="form-control" type="text" id="name" name="user_name" class="form-control" />
                     </div>
                     <div class="mb-3">
                         <label for="mail" class="col-form-label">Correo electrónico:</label>
-                        <input type="email" id="mail" name="user_mail" class="form-control" />
+                        <input class="form-control" type="email" id="mail" name="user_mail" class="form-control" />
                     </div>
                     <div class="mb-3">
                         <label for="msg" class="col-form-label">Mensaje:</label>
                         <textarea id="msg" name="user_message" class="form-control"></textarea>
                     </div>
-                    <button class="btn btn-primary mb-3">Enviar</button>
+                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Contactanos!">Enviar</button>
                 </div>
             </form>
         </div>
     </div>
 </section>
+
 
     
 </section>
